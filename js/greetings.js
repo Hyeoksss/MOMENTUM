@@ -2,10 +2,11 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-//Solved Duplicated Var
+//Handle Duplicated Var
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
+//event.preventDefault()없어도 잘 실행 되는데 이 부분 생각해보기
 function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
