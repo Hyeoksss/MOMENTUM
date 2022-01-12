@@ -6,6 +6,7 @@ const images = [
     "4.jpg",
     "5.jpeg",
     "6.jpg",
+    "7.jpg",
 ];
 
 const randomImage = images[Math.floor(Math.random() * images.length)];
