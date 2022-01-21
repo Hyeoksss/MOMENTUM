@@ -7,6 +7,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 //event.preventDefault()없어도 잘 실행 되는데 이 부분 생각해보기
+//코드가 많아지고 사이트이 컨텐츠들이 많아지면 매번 새로 가져오는 것이 비효율적일 수 있다
 function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
