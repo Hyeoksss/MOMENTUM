@@ -1,3 +1,17 @@
+body {
+    font-family: "Work Sans", sans-serif;
+}
 .hidden {
     display: none;
+}
+.image-wrapper {
+    overflow: hidden;
+}
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-height: 100%;
+    z-index: -1;
 }
