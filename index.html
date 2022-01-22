@@ -11,22 +11,35 @@
 </head>
 
 <body>
-    <div class="contents-box">
-        <form id="login-form" class="hidden">
-            <input required maxlength="15" type="text" placeholder="What Is Your Name?" />
-            <input type="submit" value="Log In" />
-        </form>
-        <h2 id="clock">00:00:00</h2>
-        <h1 id="greeting" class="hidden"></h1>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <ul id="todo-list"></ul>
-        <div id="qoute">
-            <span></span>
-            <span></span>
+    <div class="contents-wrapper">
+        <div class="white-font" id="weather">
+            <div class="weather-info">
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div id="weather">
+        <div class="center">
+            <div class="center-contents">
+                <form id="login-form" class="hidden">
+                    <div class="input-box">
+                        <input class="input input-box_name" required maxlength="15" type="text" placeholder="What Is Your Name?" />
+                        <div class="name-input_bar"></div>
+                    </div>
+                    <!-- <input type="submit" value="Log In" /> -->
+                </form>
+                <h2 class="white-font" id="clock">00:00:00</h2>
+                <h1 class="white-font" id="greeting" class="hidden"></h1>
+                <form id="todo-form">
+                    <div class="input-box">
+                        <h1 class="white-font">What is your main focus Today?</h1>
+                        <input class="input input-box_todo" type="text" required />
+                        <div class="todo-input_bar"></div>
+                    </div>
+                </form>
+                <ul class="white-font" id="todo-list"></ul>
+            </div>
+        </div>
+        <div class="white-font" id="qoute">
             <span></span>
             <span></span>
         </div>
