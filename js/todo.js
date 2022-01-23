@@ -28,15 +28,14 @@ function paintTodo(newTodo) {
     li.appendChild(button);
     toDoList.appendChild(li);
 }
-function handleLiCount(event) {
-    event.preventDefault();
+function handleLiCount() {
     const ul = document.getElementById("todo-list");
     const todoAlert = document.getElementById("todo-alert");
     let liCount = ul.childElementCount;
     if (liCount >= 5) {
-        todoAlert.classList.remove("hidden");
+        todoAlert.classList.toggle("hidden");
     } else {
-        todoAlert.classList.add("hidden");
+        todoAlert.classList.toggle("hidden");
     }
 }
 toDoInput.addEventListener("submit", handleLiCount);
