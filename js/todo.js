@@ -21,12 +21,25 @@ function paintTodo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "X";
+    button.classList.add("white-font");
     button.addEventListener("click", deleteTodo);
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
 }
+function handleLiCount(event) {
+    event.preventDefault();
+    const ul = document.getElementById("todo-list");
+    const todoAlert = document.getElementById("todo-alert");
+    let liCount = ul.childElementCount;
+    if (liCount >= 5) {
+        todoAlert.classList.remove("hidden");
+    } else {
+        todoAlert.classList.add("hidden");
+    }
+}
+toDoInput.addEventListener("submit", handleLiCount);
 
 function handleTodoSubmit(event) {
     event.preventDefault();

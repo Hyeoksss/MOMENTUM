@@ -1,5 +1,6 @@
 body {
     font-family: "Work Sans", sans-serif;
+    overflow: hidden;
 }
 .hidden {
     display: none;
@@ -44,7 +45,7 @@ body {
 #qoute {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 700px;
     text-align: center;
     position: absolute;
     bottom: 50px;
@@ -56,11 +57,11 @@ body {
     align-items: center;
 }
 .center-contents {
-    margin-top: 25vh;
+    margin-top: 20vh;
 }
 /* Font */
 #clock {
-    font-size: 150px;
+    font-size: 180px;
     margin-bottom: 20px;
 }
 #greeting {
@@ -87,14 +88,18 @@ body {
 }
 .input-box_name {
     width: 300px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 .input-box_name::placeholder {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 600;
 }
 .input-box_todo {
-    width: 400px;
+    width: 700px;
     font-size: 20px;
     font-weight: 600;
     color: white;
@@ -104,6 +109,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.input-box h1 {
+    margin-bottom: 20px;
 }
 .name-input_bar {
     height: 6px;
@@ -116,4 +124,52 @@ body {
     width: 400px;
     background-color: white;
     border-radius: 4px;
+}
+#todo-list button {
+    color: tomato;
+    border: 0px solid;
+    background-color: transparent;
+}
+#todo-list li {
+    font-size: 30px;
+}
+#todo-form .input-box input {
+    font-size: 30px;
+}
+
+#min-width {
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    top: 0;
+}
+
+#min-width span {
+    text-align: center;
+}
+#min-width i {
+    font-size: 200px;
+    color: black;
+}
+
+@media screen and (min-width: 700px) and (min-height: 900px) {
+    #min-width {
+        display: none;
+    }
+}
+
+#todo-alert {
+    width: 400px;
+    height: 60px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    font-size: 30px;
+    font-weight: 600;
 }
