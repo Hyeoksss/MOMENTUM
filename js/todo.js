@@ -28,17 +28,6 @@ function paintTodo(newTodo) {
     li.appendChild(button);
     toDoList.appendChild(li);
 }
-function handleLiCount() {
-    const ul = document.getElementById("todo-list");
-    const todoAlert = document.getElementById("todo-alert");
-    let liCount = ul.childElementCount;
-    if (liCount >= 5) {
-        todoAlert.classList.toggle("hidden");
-    } else {
-        todoAlert.classList.toggle("hidden");
-    }
-}
-toDoInput.addEventListener("submit", handleLiCount);
 
 function handleTodoSubmit(event) {
     event.preventDefault();

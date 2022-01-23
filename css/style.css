@@ -42,6 +42,10 @@ body {
     margin-top: 20px;
     text-align: right;
 }
+.weather-info span {
+    font-size: 25px;
+    color: rgb(253, 253, 253);
+}
 #qoute {
     display: flex;
     flex-direction: column;
